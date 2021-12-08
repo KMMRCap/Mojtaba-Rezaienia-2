@@ -1,0 +1,493 @@
+/* General Styles */
+
+
+@font-face {
+    font-family: "poppins";
+    src: url(../fonts/Poppins-Regular.eot);
+    src: url(../fonts/Poppins-Regular.ttf) format("embedded-opentype");
+    src: url(../fonts/Poppins-Regular.woff) format("truetype");
+    src: url(../fonts/Poppins-Regular.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "playfair-display";
+    src: url(../fonts/PlayfairDisplay-Regular.eot);
+    src: url(../fonts/PlayfairDisplay-Regular.ttf) format("embedded-opentype");
+    src: url(../fonts/PlayfairDisplay-Regular.woff) format("truetype");
+    src: url(../fonts/PlayfairDisplay-Regular.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "opensans-condenced";
+    src: url(../fonts/OpenSansCondensed-Light.eot);
+    src: url(../fonts/OpenSansCondensed-Light.ttf) format("embedded-opentype");
+    src: url(../fonts/OpenSansCondensed-Light.woff) format("truetype");
+    src: url(../fonts/OpenSansCondensed-Light.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "cinzel-bold";
+    src: url(../fonts/Cinzel-ExtraBold.eot);
+    src: url(../fonts/Cinzel-ExtraBold.ttf) format("embedded-opentype");
+    src: url(../fonts/Cinzel-ExtraBold.woff) format("truetype");
+    src: url(../fonts/Cinzel-ExtraBold.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "lato";
+    src: url(../fonts/Lato-Regular.eot);
+    src: url(../fonts/Lato-Regular.ttf) format("embedded-opentype");
+    src: url(../fonts/Lato-Regular.woff) format("truetype");
+    src: url(../fonts/Lato-Regular.woff2) format("woff2");
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ol,ul {
+    list-style: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #e7e7e7;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #e7e7e7;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #e7e7e7;
+}
+
+body{
+    font-size: 100%;
+    font-family: "poppins", "playfair-display", "cinzel-bold",
+    "opensans-condenced", "lato";
+    overflow-x: hidden;
+}
+
+
+
+
+/* ----------------------------------------------------- */
+/* Header */
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #212121;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10rem;
+    text-align: center;
+}
+
+.sidenav a {
+    padding: .8rem 0;
+    font-size: 2.5rem;
+    color: #e7e7e7;
+    font-family: "playfair-display";
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #67E0E1;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 2.5rem;
+    font-size: 3.5rem;
+    margin-left: 5rem;
+}
+
+#header-overlay{
+    background-image: url(../img/Rectangle1.png);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+header .text-left h3{
+    font-family: "opensans-condenced";
+    letter-spacing: 0.5rem;
+    font-size: 2rem;
+}
+
+header .row .position-absolute .text-light{
+    font-family: "playfair-display";
+    font-size: 3rem;
+    top: -.5rem;
+    left: 4rem;
+}
+
+header .display-1 {
+    font-size: 7rem;
+    font-family: "playfair-display";
+    background: url(../img/richard-img2.jpg) no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-position-y: bottom;
+}
+
+header .col-5 h3{
+    font-family: "poppins";
+    letter-spacing: .2rem;
+    font-size: 1.5rem;
+}
+
+
+
+
+/* ------------------------------------------------------------ */
+/* Section 1 : About Me */
+
+
+#section1 .col-xl-4 .display-1{
+    font-family: "cinzel-bold";
+    font-size: 22rem;
+    font-weight: 900;
+    line-height: 20rem;
+    color: transparent;
+    background: url(../img/richard-img3.png) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.tablinks{
+    font-family: "poppins";
+    font-size: 1.2rem;
+    color: #e7e7e7;
+    letter-spacing: 0.14rem;
+    padding: 0.7rem 0;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color ease-in-out 200ms;
+}
+.tablinks.active{
+    color: #67E0E1;
+}
+
+.tablinks:hover{
+    color: #67E0E1;
+}
+
+.tabcontent {
+    animation: fadeEffect 1s;
+    display: none;
+}
+  
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.s-title{
+    font-family: "poppins";
+    letter-spacing: .2rem;
+}
+
+.s-subtitle{
+    font-family: "playfair-display";
+    letter-spacing: .4rem;
+}
+
+.spliter{
+    width: 100%;
+    height: 0.02rem;
+    border: none;
+    background-color: #e7e7e7;
+    margin-top: 2rem !important;
+}
+
+.spliter-box{
+    width: 6rem;
+    height: 0.5rem;
+    background-color: #67E0E1;
+    margin-bottom: 2rem;
+}
+
+.s-text{
+    font-family: "lato";
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    letter-spacing: .2rem;
+}
+
+
+
+
+/* ------------------------------------------------------------ */
+/* Section 2 : Leatest Works */
+
+
+#section2 .col-xl-4 .display-1{
+    font-family: "cinzel-bold";
+    font-size: 22rem;
+    font-weight: 900;
+    line-height: 20rem;
+    color: transparent;
+    background: url(../img/richard-img4.jpg) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: cover;
+    background-position-x: -6rem;
+}
+
+#section2 .col-md-4 h6{
+    font-family: "poppins";
+    letter-spacing: .1rem;
+}
+
+#section2 .col-md-4 h2{
+    font-family: "playfair-display";
+    letter-spacing: .3rem;
+    color: #e7e7e7;
+    transition: ease-in-out 200ms;
+}
+
+#section2 .col-md-4 h2:hover{
+    color: #67E0E1;
+}
+
+.spliter-works{
+    width: 70%;
+    height: 0.02rem;
+    border: none;
+    background-color: #e7e7e7;
+    margin-top: 2rem !important;
+}
+
+.works-button{
+    font-size: 1.7rem;
+    font-family: "poppins";
+    background: transparent;
+    border: 0.1rem #67E0E1 solid;
+    box-shadow: #67E0E1 0.3rem 0.3rem 0 0;
+    padding: 0.8rem 3.5rem;
+    transition: background ease-in-out 300ms;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    color: #e7e7e7;
+}
+
+.works-button:hover{
+    box-shadow: 0 0 0 0;
+    color: #000;
+    background-color: #67E0E1;
+}
+
+
+
+
+/* -------------------------------------------------------- */
+/* Section 3 : Testimonials */
+
+
+#section3 .col-xl-4 .display-1{
+    font-family: "cinzel-bold";
+    font-size: 22rem;
+    font-weight: 900;
+    line-height: 20rem;
+    color: transparent;
+    background: url(../img/richard-img9.jpg) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: cover;
+    background-position-x: center;
+}
+
+#section3 .carousel-inner span{
+    font-size: 1.1rem;
+    font-family: "poppins";
+    letter-spacing: .1rem;
+    line-height: 2rem;
+}
+
+#section3 .carousel-inner img{
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.c-c-prev{
+    position: absolute;
+    right: 5.5rem;
+    bottom: 1.5rem;
+}
+
+.c-c-next{
+    position: absolute;
+    right: 2.5rem;
+    bottom: 1.5rem;
+}
+
+.c-c-prev , .c-c-next{
+    color: #e7e7e7;
+    transition: ease-in-out 150ms;
+}
+
+.c-c-prev:hover,.c-c-next:hover{
+    color: #67E0E1;
+}
+
+
+#section3 .container-fluid h3{
+    font-family: "playfair-display";
+    font-size: 2.6rem;
+}
+
+.spliter-testi{
+    width: .3rem;
+    height: 3.5rem;
+    border: none;
+    background-color: #67E0E1;
+}
+
+#section3 .container-fluid h2{
+    font-family: "poppins";
+    letter-spacing: .2rem;
+    line-height: 2.5rem;
+}
+
+
+
+
+/* ---------------------------------------------------------- */
+/* Section 4 : My Blog */
+
+
+#section4 .col-xl-4 .display-1{
+    font-family: "cinzel-bold";
+    font-size: 22rem;
+    font-weight: 900;
+    line-height: 20rem;
+    color: transparent;
+    background: url(../img/richard-img2.jpg) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: cover;
+    background-position-x: center;
+}
+
+#section4 .carousel-inner p{
+    font-family: "playfair-display";
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    letter-spacing: .2rem;
+    transition: color ease-in-out 200ms;
+}
+
+#section4 .carousel-inner p:hover{
+    color: #67E0E1 !important;
+}
+
+#section4 .carousel-inner span{
+    font-family: "poppins";
+    font-size: 1rem;
+    transition: ease-in-out 200ms;
+}
+
+#section4 .carousel-inner span:hover{
+    color: #67E0E1 !important;
+}
+
+.c-c-prev1,.c-c-next1{
+    color: #e7e7e7;
+    transition: ease-in-out 200ms;
+}
+
+.c-c-prev1:hover,.c-c-next1:hover{
+    color: #67E0E1;
+}
+
+
+
+
+/* ----------------------------------------------------- */
+/* Footer */
+
+#footer input[type=email]{
+    border: 0;
+    border-bottom: 1px solid #e7e7e7;
+    font-family: "Lato";
+    font-size: 1.4rem;
+}
+
+#footer input[type=submit]{
+    position: absolute;
+    right: 0;
+    font-family: "poppins";
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.social-buttons{
+    font-family: "poppins";
+    background: transparent;
+    border: 0.1rem #67E0E1 solid;
+    box-shadow: #67E0E1 0.3rem 0.3rem 0 0;
+    padding: 4.5rem 2.5rem 2.5rem;
+    transition: background ease-in-out 300ms;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    color: #e7e7e7;
+}
+
+.social-buttons:hover{
+    box-shadow: 0 0 0 0;
+    color: #000;
+    background-color: #67E0E1;
+}
+
+#footer .col p{
+    font-family: "lato";
+    font-size: 1.3rem;
+}
+
+
+
+
+/* --------------------------------------------------------- */
+/* Responsive Settings */
+
+
+@media (max-width: 575.98px){
+    header .col-1 i{
+        right: .5rem;
+    }
+    header .d-inline-block{
+        font-size: 1.5rem !important;
+        letter-spacing: .2rem !important;
+    }
+    header .position-absolute .text-light{
+        font-size: 2rem !important;
+        top: 0 !important;
+    }
+    header .display-1{
+        font-size: 5.2rem !important;
+    }
+    header .text-center h3{
+        font-size: 1.3rem !important;
+    }
+    #section3 .carousel span{
+        font-size: .8rem !important;
+    }
+}
